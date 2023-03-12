@@ -1,0 +1,118 @@
+.Login-page {
+  background: url("../assets/background.png");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.Login {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Login-form {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: space-around;
+}
+.Login-top-container {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+}
+.Login-logo {
+  width: 70%;
+  height: auto;
+}
+
+.Login-mid-container {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Login-mid-container > input::-webkit-outer-spin-button,
+.Login-mid-container > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.Login-mid-container > input::placeholder {
+  color: white;
+  font-weight: bold;
+}
+.Login-mid-container > input {
+  margin: 10px 0;
+  height: 50px;
+  outline: none;
+  border: none;
+  width: 250px;
+  padding-left: 10px;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 2%;
+  border: 2px solid rgb(136, 255, 0);
+  color: white;
+  font-weight: bold;
+}
+.Login-mid-container > input:focus {
+  background: rgba(0, 0, 0, 0.5);
+}
+.Login-bot-container {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.Login-bot-container > input{
+  text-align: center;
+  width: 230px;
+  height: 55px;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: bold;
+  border: 2px solid rgb(136, 255, 0);
+  background: transparent;
+  color: white;
+  font-size: 19px;
+  transition: ease-out 0.3s;
+  cursor: pointer;
+  margin-bottom: -80px;
+}
+@media(max-height:780px){
+  .Login-form {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 500px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-around;
+  }
+  .Login-bot-container > input{
+    text-align: center;
+    width: 230px;
+    height: 55px;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: bold;
+    border: 2px solid rgb(136, 255, 0);
+    background: transparent;
+    color: white;
+    font-size: 19px;
+    transition: ease-out 0.3s;
+    cursor: pointer;
+    margin: 5px;
+  }
+}
